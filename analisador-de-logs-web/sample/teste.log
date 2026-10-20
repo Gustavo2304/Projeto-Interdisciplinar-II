@@ -1,0 +1,37 @@
+2026-09-08 09:58:01 INFO  Application started successfully
+2026-09-08 09:58:02 INFO  Loaded configuration from config/production.yaml
+2026-09-08 09:58:03 INFO  Connected to database at db-prod-01:5432
+2026-09-08 09:58:03 INFO  Connected to Redis cache at cache-01:6379
+2026-09-08 09:58:04 INFO  Server listening on port 8080
+2026-09-08 10:02:11 INFO  GET /api/products 200 OK (45ms)
+2026-09-08 10:02:15 INFO  GET /api/products/1042 200 OK (12ms)
+2026-09-08 10:03:02 INFO  POST /api/cart/add 200 OK (30ms)
+2026-09-08 10:05:47 WARNING Query execution time exceeded threshold: 4200ms for SELECT * FROM orders WHERE customer_id = 8821
+2026-09-08 10:08:19 INFO  POST /api/orders 201 Created (890ms)
+2026-09-08 10:12:03 ERROR Database connection timeout after 30000ms (pool: main-pool, host: db-prod-01:5432)
+2026-09-08 10:12:04 ERROR Database connection timeout after 30000ms (pool: main-pool, host: db-prod-01:5432)
+2026-09-08 10:12:05 ERROR Database connection timeout after 30000ms (pool: main-pool, host: db-prod-01:5432)
+2026-09-08 10:12:06 ERROR Database connection timeout after 30000ms (pool: main-pool, host: db-prod-01:5432)
+2026-09-08 10:12:07 ERROR Database connection timeout after 30000ms (pool: main-pool, host: db-prod-01:5432)
+2026-09-08 10:12:08 ERROR Database connection timeout after 30000ms (pool: main-pool, host: db-prod-01:5432)
+2026-09-08 10:12:09 WARNING Connection pool exhausted: 0 of 20 connections available
+2026-09-08 10:12:10 ERROR Failed to process request: GET /api/orders/5521 - connection pool exhausted
+2026-09-08 10:15:22 WARNING Memory usage at 87% of allocated heap (1.74GB / 2GB)
+2026-09-08 10:15:52 WARNING Memory usage at 91% of allocated heap (1.82GB / 2GB)
+2026-09-08 10:16:30 INFO  GET /api/health 200 OK (3ms)
+2026-09-08 10:19:14 CRITICAL Unhandled exception in OrderProcessor.calculateShipping: NullReferenceException
+2026-09-08 10:19:14 CRITICAL   at OrderProcessor.calculateShipping (order_processor.js:245)
+2026-09-08 10:19:14 CRITICAL   at OrderProcessor.finalize (order_processor.js:198)
+2026-09-08 10:19:14 CRITICAL   at RequestHandler.handle (request_handler.js:87)
+2026-09-08 10:19:14 CRITICAL Order 88213 failed to finalize - customer charged but order not confirmed
+2026-09-08 10:21:05 INFO  GET /api/products 200 OK (52ms)
+2026-09-08 10:24:47 WARNING Query execution time exceeded threshold: 5100ms for SELECT * FROM order_items JOIN products
+2026-09-08 10:28:33 ERROR Database connection timeout after 30000ms (pool: main-pool, host: db-prod-01:5432)
+2026-09-08 10:28:34 ERROR Database connection timeout after 30000ms (pool: main-pool, host: db-prod-01:5432)
+2026-09-08 10:30:01 INFO  POST /api/cart/add 200 OK (28ms)
+2026-09-08 10:33:19 WARNING Memory usage at 94% of allocated heap (1.88GB / 2GB)
+2026-09-08 10:35:02 CRITICAL Unhandled exception in OrderProcessor.calculateShipping: NullReferenceException
+2026-09-08 10:35:02 CRITICAL Order 88240 failed to finalize - customer charged but order not confirmed
+2026-09-08 10:38:44 INFO  GET /api/health 200 OK (4ms)
+2026-09-08 10:41:12 ERROR Failed to send confirmation email to customer 3391: SMTP connection refused
+2026-09-08 10:45:00 INFO  GET /api/products 200 OK (48ms)

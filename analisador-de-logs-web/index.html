@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <!-- CSP: só scripts do próprio site e só conexões com o Gemini (ou seu proxy .workers.dev).
+       Se usar um proxy em outro domínio, adicione-o em connect-src. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://generativelanguage.googleapis.com https://*.workers.dev; base-uri 'none'; form-action 'none'">
+  <title>Analisador de Logs com IA</title>
+  <meta name="description" content="Envie um log e receba um diagnóstico com problemas por severidade, causa provável e correção sugerida, usando a API gratuita do Google Gemini.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23171a21'/%3E%3Cpath d='M8 11h16M8 16h10M8 21h13' stroke='%236ea8fe' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>Analisador de Logs com IA</h1>
+      <p>Cole ou envie um log e receba um diagnóstico: resumo geral, problemas por severidade, causa provável e correção sugerida.</p>
+    </header>
+
+    <aside class="notice" aria-label="Aviso de privacidade">
+      <strong>Privacidade:</strong> na camada gratuita da API Gemini, o conteúdo enviado pode ser usado pelo Google para melhorar seus produtos e ser lido por revisores humanos.
+      <strong>Não envie logs confidenciais</strong> nem dados de clientes.
+    </aside>
+
+    <section class="card" id="key-section" aria-labelledby="key-title">
+      <h2 id="key-title"><span class="step">1</span> Sua chave da API Gemini (gratuita)</h2>
+      <p class="hint">
+        <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Crie uma chave no Google AI Studio</a>
+        e cole abaixo. Ela fica só neste navegador e é enviada apenas ao Google, nunca a este site.
+      </p>
+      <div class="row">
+        <input id="key-input" type="password" autocomplete="off" autocapitalize="off" spellcheck="false"
+               placeholder="AIza…" aria-label="Chave da API Gemini">
+        <button id="key-toggle" type="button" class="ghost" aria-pressed="false">Mostrar</button>
+      </div>
+      <label class="check">
+        <input id="key-remember" type="checkbox">
+        Lembrar a chave enquanto esta aba estiver aberta
+      </label>
+    </section>
+
+    <section class="card" aria-labelledby="log-title">
+      <h2 id="log-title"><span class="step">2</span> Seu log</h2>
+
+      <label id="dropzone" class="dropzone" for="file-input">
+        <input id="file-input" type="file" accept=".log,.txt,.out,.json,text/plain">
+        <span><strong>Clique para escolher um arquivo</strong> ou arraste e solte aqui (até 5 MB)</span>
+      </label>
+
+      <label for="log-input" class="visually-hidden">Conteúdo do log</label>
+      <textarea id="log-input" rows="12" spellcheck="false" placeholder="…ou cole o conteúdo do log aqui"></textarea>
+
+      <label class="check">
+        <input id="redact-box" type="checkbox" checked>
+        Mascarar e-mails, IPs, tokens, senhas, CPF e cartões antes de enviar
+      </label>
+
+      <div class="actions">
+        <button id="analyze-btn" type="button" class="primary">Analisar log</button>
+        <button id="sample-btn" type="button" class="ghost">Usar log de exemplo</button>
+        <button id="clear-btn" type="button" class="ghost">Limpar</button>
+      </div>
+    </section>
+
+    <div id="status" class="status" role="status" aria-live="polite" data-kind="idle" hidden></div>
+
+    <section id="result" class="result" aria-labelledby="result-title" hidden>
+      <div class="result-head">
+        <h2 id="result-title" class="visually-hidden">Resultado da análise</h2>
+        <p id="result-stats" class="stats"></p>
+        <button id="download-btn" type="button" class="ghost">Baixar relatório (.md)</button>
+      </div>
+      <div id="result-body"></div>
+    </section>
+
+    <footer class="footer">
+      Diagnóstico gerado por IA: confirme antes de aplicar qualquer correção em produção.
+    </footer>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
