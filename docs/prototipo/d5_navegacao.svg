@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif">
+<rect width="1400" height="760" fill="white"/>
+<defs>
+<marker id="open" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+  <path d="M1,1 L10,5 L1,9" fill="none" stroke="#222" stroke-width="1.5"/></marker>
+<marker id="filled" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+  <path d="M0,0 L10,5 L0,10 Z" fill="#222"/></marker>
+<marker id="hollow" markerWidth="16" markerHeight="16" refX="14" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+  <path d="M1,1 L14,7 L1,13 Z" fill="white" stroke="#222" stroke-width="1.5"/></marker>
+</defs>
+<text x="700.0" y="28" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" font-style="normal" fill="#1b1b1b">Fluxo de navegação entre as telas — HermesPDV</text>
+<rect x="50" y="318" width="230" height="64" rx="8" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<circle cx="70" cy="338" r="13" fill="white" stroke="#2B5FA8" stroke-width="1.8"/>
+<text x="70" y="338.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">1</text>
+<text x="177.0" y="340" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Login</text>
+<text x="177.0" y="363" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">RF04</text>
+<rect x="330" y="318" width="230" height="64" rx="8" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<circle cx="350" cy="338" r="13" fill="white" stroke="#2B5FA8" stroke-width="1.8"/>
+<text x="350" y="338.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">2</text>
+<text x="457.0" y="340" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Painel inicial</text>
+<text x="457.0" y="363" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">atalhos por perfil</text>
+<rect x="690" y="80" width="230" height="64" rx="8" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<circle cx="710" cy="100" r="13" fill="white" stroke="#2B5FA8" stroke-width="1.8"/>
+<text x="710" y="100.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">3</text>
+<text x="817.0" y="102" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Produtos (lista)</text>
+<text x="817.0" y="125" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">busca · RF01, RF17</text>
+<rect x="1050" y="80" width="230" height="64" rx="8" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<circle cx="1070" cy="100" r="13" fill="white" stroke="#2B5FA8" stroke-width="1.8"/>
+<text x="1070" y="100.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">4</text>
+<text x="1177.0" y="102" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Produto (formulário)</text>
+<text x="1177.0" y="125" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">novo / editar · RF01</text>
+<rect x="690" y="185" width="230" height="64" rx="8" fill="white" stroke="#777" stroke-width="2" stroke-dasharray="7,5"/>
+<circle cx="710" cy="205" r="13" fill="white" stroke="#777" stroke-width="1.8"/>
+<text x="710" y="205.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">–</text>
+<text x="817.0" y="207" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Clientes e usuários</text>
+<text x="817.0" y="230" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">mesmo padrão das telas 3 e 4</text>
+<rect x="690" y="318" width="230" height="64" rx="8" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<circle cx="710" cy="338" r="13" fill="white" stroke="#2B5FA8" stroke-width="1.8"/>
+<text x="710" y="338.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">5</text>
+<text x="817.0" y="340" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">PDV — nova venda</text>
+<text x="817.0" y="363" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">carrinho · RF05, RF06</text>
+<rect x="1010" y="318" width="230" height="64" rx="8" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<circle cx="1030" cy="338" r="13" fill="white" stroke="#2B5FA8" stroke-width="1.8"/>
+<text x="1030" y="338.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">6</text>
+<text x="1137.0" y="340" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Pagamento</text>
+<text x="1137.0" y="363" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">RF07, RF08 · RN01</text>
+<rect x="1010" y="440" width="230" height="64" rx="8" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<circle cx="1030" cy="460" r="13" fill="white" stroke="#2B5FA8" stroke-width="1.8"/>
+<text x="1030" y="460.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">7</text>
+<text x="1137.0" y="462" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Comprovante</text>
+<text x="1137.0" y="485" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">RF13</text>
+<rect x="690" y="545" width="230" height="64" rx="8" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<circle cx="710" cy="565" r="13" fill="white" stroke="#2B5FA8" stroke-width="1.8"/>
+<text x="710" y="565.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">8</text>
+<text x="817.0" y="567" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Vendas</text>
+<text x="817.0" y="590" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">consulta e cancelamento · RF11, RF12</text>
+<rect x="690" y="650" width="230" height="64" rx="8" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<circle cx="710" cy="670" r="13" fill="white" stroke="#2B5FA8" stroke-width="1.8"/>
+<text x="710" y="670.5" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">9</text>
+<text x="817.0" y="672" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Relatórios</text>
+<text x="817.0" y="695" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">RF14, RF15, RF16</text>
+<line x1="280.0" y1="342.0" x2="330.0" y2="342.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<rect x="282.3" y="319.0" width="45.4" height="18.0" fill="white" opacity="0.92"/>
+<text x="305" y="328" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" font-style="normal" fill="#222">entrar</text>
+<polyline points="390.0,382.0 390.0,416.0 165.0,416.0 165.0,382.0" fill="none" stroke="#222" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#filled)"/>
+<rect x="273.5" y="407.0" width="33.0" height="18.0" fill="white" opacity="0.92"/>
+<text x="290.0" y="416" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="italic" fill="#222">sair</text>
+<line x1="560.0" y1="350.0" x2="600.0" y2="350.0" stroke="#222" stroke-width="2"/>
+<line x1="600.0" y1="112.0" x2="600.0" y2="682.0" stroke="#222" stroke-width="2"/>
+<line x1="600.0" y1="112.0" x2="690.0" y2="112.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<line x1="600.0" y1="217.0" x2="690.0" y2="217.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<line x1="600.0" y1="350.0" x2="690.0" y2="350.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<line x1="600.0" y1="577.0" x2="690.0" y2="577.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<line x1="600.0" y1="682.0" x2="690.0" y2="682.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<line x1="920.0" y1="100.0" x2="1050.0" y2="100.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<rect x="940.4" y="77.0" width="89.1" height="18.0" fill="white" opacity="0.92"/>
+<text x="985.0" y="86" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" font-style="normal" fill="#222">novo / editar</text>
+<line x1="1050.0" y1="126.0" x2="920.0" y2="126.0" stroke="#222" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#filled)"/>
+<rect x="928.0" y="135.0" width="114.1" height="18.0" fill="white" opacity="0.92"/>
+<text x="985.0" y="144" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="italic" fill="#222">salvar / cancelar</text>
+<line x1="920.0" y1="338.0" x2="1010.0" y2="338.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<rect x="945.4" y="315.0" width="39.2" height="18.0" fill="white" opacity="0.92"/>
+<text x="965.0" y="324" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" font-style="normal" fill="#222">pagar</text>
+<line x1="1010.0" y1="364.0" x2="920.0" y2="364.0" stroke="#222" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#filled)"/>
+<rect x="942.3" y="373.0" width="45.4" height="18.0" fill="white" opacity="0.92"/>
+<text x="965.0" y="382" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="italic" fill="#222">voltar</text>
+<line x1="1125.0" y1="382.0" x2="1125.0" y2="440.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<rect x="1127.2" y="402.0" width="101.6" height="18.0" fill="white" opacity="0.92"/>
+<text x="1178" y="411" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" font-style="normal" fill="#222">finalizar venda</text>
+<polyline points="1010.0,472.0 805.0,472.0 805.0,382.0" fill="none" stroke="#222" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#filled)"/>
+<rect x="869.8" y="449.0" width="70.4" height="18.0" fill="white" opacity="0.92"/>
+<text x="905" y="458.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="italic" fill="#222">nova venda</text>
+<rect x="1010" y="553" width="320" height="48" rx="6" fill="#FFFDF2" stroke="#8A6D1F" stroke-width="1.6" stroke-dasharray="5,4"/>
+<text x="1170" y="571" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" font-style="normal" fill="#1b1b1b">Janela de cancelamento (motivo obrigatório)</text>
+<text x="1170" y="589" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">fica na própria tela 8 — RN03, RNF05</text>
+<line x1="920.0" y1="577.0" x2="1010.0" y2="575.0" stroke="#222" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#filled)"/>
+<rect x="936.0" y="554.0" width="57.9" height="18.0" fill="white" opacity="0.92"/>
+<text x="965" y="563.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="italic" fill="#222">cancelar</text>
+<text x="60" y="600" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">Legenda</text>
+<line x1="60.0" y1="620.0" x2="110.0" y2="620.0" stroke="#222" stroke-width="2" marker-end="url(#filled)"/>
+<text x="120" y="620" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#1b1b1b">navegação principal</text>
+<line x1="60.0" y1="642.0" x2="110.0" y2="642.0" stroke="#222" stroke-width="1.6" stroke-dasharray="7,5" marker-end="url(#filled)"/>
+<text x="120" y="642" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#1b1b1b">retorno / ação secundária</text>
+<text x="60" y="668" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#555">Tracejado nas caixas = telas análogas, não desenhadas.</text>
+<text x="60" y="686" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#555">Números = telas dos wireframes (seção 5.2).</text>
+</svg>
