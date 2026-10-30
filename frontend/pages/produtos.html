@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos — HermesPDV</title>
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+  <aside class="menu">
+    <div class="marca">HermesPDV</div>
+    <nav>
+      <a href="#">Painel</a>
+      <a href="#">Nova venda</a>
+      <a href="/pages/produtos.html" class="ativo">Produtos</a>
+      <a href="#">Clientes</a>
+      <a href="#">Vendas</a>
+      <a href="#">Relatórios</a>
+    </nav>
+  </aside>
+
+  <main>
+    <header class="topo">
+      <h1>Produtos</h1>
+      <button id="btnNovo" class="btn primario">+ Novo produto</button>
+    </header>
+
+    <form id="formBusca" class="busca">
+      <input id="busca" type="search" placeholder="Buscar por nome ou código">
+      <button class="btn">Buscar</button>
+      <label class="check"><input id="inativos" type="checkbox"> mostrar inativos</label>
+    </form>
+
+    <div id="aviso" class="aviso" hidden></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th><th>Nome</th><th>Categoria</th>
+          <th class="num">Preço (R$)</th><th class="num">Estoque</th><th>Situação</th><th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="lista"></tbody>
+    </table>
+    <p id="total" class="rodape"></p>
+  </main>
+
+  <!-- janela de cadastro/edição -->
+  <div id="janela" class="fundo" hidden>
+    <form id="formProduto" class="janela" novalidate>
+      <h2 id="tituloJanela">Novo produto</h2>
+      <div class="grade">
+        <label>Código *<input name="codigo" maxlength="20" required></label>
+        <label class="largo">Nome *<input name="nome" maxlength="120" required></label>
+        <label>Categoria *<select name="id_categoria" required></select></label>
+        <label>Preço de custo (R$)<input name="preco_custo" inputmode="decimal" value="0"></label>
+        <label>Preço de venda (R$) *<input name="preco_venda" inputmode="decimal" required></label>
+        <label>Quantidade em estoque<input name="quantidade_estoque" type="number" min="0" step="1" value="0"></label>
+        <label>Estoque mínimo<input name="estoque_minimo" type="number" min="0" step="1" value="0"></label>
+        <label class="check"><input name="ativo" type="checkbox" checked> Produto ativo</label>
+      </div>
+      <p id="erroForm" class="erro" hidden></p>
+      <div class="acoes">
+        <button type="button" class="btn" data-fechar>Cancelar</button>
+        <button type="submit" class="btn primario">Salvar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- janela de confirmação de exclusão -->
+  <div id="confirma" class="fundo" hidden>
+    <div class="janela pequena">
+      <h2>Excluir produto?</h2>
+      <p id="textoConfirma"></p>
+      <div class="acoes">
+        <button type="button" class="btn" data-fechar>Voltar</button>
+        <button type="button" id="btnConfirmaExcluir" class="btn perigo">Excluir</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/produtos.js"></script>
+</body>
+</html>
