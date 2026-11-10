@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clientes — HermesPDV</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body class="app">
+  <aside id="menu" class="menu"></aside>
+  <main>
+    <header class="topo">
+      <div><h1>Clientes</h1><p class="subtitulo">Pessoas e empresas identificadas nas vendas</p></div>
+      <button id="btnNovo" class="btn primario" hidden>+ Novo cliente</button>
+    </header>
+    <form id="filtros" class="filtros">
+      <label>Buscar<input id="busca" type="search" placeholder="Nome ou CPF/CNPJ"></label>
+      <div class="acoes-filtro"><button class="btn primario">Buscar</button></div>
+    </form>
+    <div class="tabela-wrap">
+      <table>
+        <thead><tr><th>Nome</th><th>CPF/CNPJ</th><th class="esconde-celular">E-mail</th><th class="esconde-celular">Telefone</th>
+          <th class="num">Compras</th><th></th></tr></thead>
+        <tbody id="lista"></tbody>
+      </table>
+    </div>
+    <p id="total" class="rodape"></p>
+  </main>
+
+  <div id="janelaCliente" class="fundo" hidden>
+    <form id="formCliente" class="janela" novalidate>
+      <h2 id="tituloCliente">Novo cliente</h2>
+      <div class="grade">
+        <label class="inteiro">Nome ou razão social *<input name="nome" maxlength="120"></label>
+        <label>CPF ou CNPJ *<input name="cpf_cnpj" inputmode="numeric" maxlength="18" placeholder="somente números ou com pontuação"></label>
+        <label>Telefone<input name="telefone" inputmode="tel" maxlength="15" placeholder="(11) 91234-5678"></label>
+        <label class="inteiro">E-mail<input name="email" type="email" maxlength="120"></label>
+      </div>
+      <p class="erro-form" hidden></p>
+      <div class="acoes"><button type="button" class="btn" data-fechar>Cancelar</button><button class="btn primario">Salvar</button></div>
+    </form>
+  </div>
+  <script src="/js/app.js"></script>
+  <script src="/js/clientes.js"></script>
+</body>
+</html>

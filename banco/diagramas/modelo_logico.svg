@@ -1,0 +1,390 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1240" viewBox="0 0 1760 1240" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif">
+<rect width="1760" height="1240" fill="white"/>
+<defs>
+<marker id="open" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+  <path d="M1,1 L10,5 L1,9" fill="none" stroke="#222" stroke-width="1.5"/></marker>
+<marker id="filled" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+  <path d="M0,0 L10,5 L0,10 Z" fill="#222"/></marker>
+<marker id="hollow" markerWidth="16" markerHeight="16" refX="14" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+  <path d="M1,1 L14,7 L1,13 Z" fill="white" stroke="#222" stroke-width="1.5"/></marker>
+</defs>
+<text x="880.0" y="30" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="21" font-weight="700" font-style="normal" fill="#1b1b1b">Modelo lógico relacional — HermesPDV (PostgreSQL)</text>
+<rect x="30" y="70" width="330" height="187" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="30" y="70" width="330" height="32" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="195.0" y="87.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">usuario</text>
+<line x1="74" y1="102" x2="74" y2="257" stroke="#ccc" stroke-width="1"/>
+<text x="52" y="117" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="82" y="117" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="700" font-style="normal" fill="#1b1b1b">id_usuario</text>
+<text x="320" y="117" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="350" y="117" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="31" y="127" width="328" height="21" fill="#F7F9FC"/>
+<text x="52" y="138" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="82" y="138" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<text x="320" y="138" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(100)</text>
+<text x="350" y="138" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="52" y="159" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555">UQ</text>
+<text x="82" y="159" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">login</text>
+<text x="320" y="159" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(30)</text>
+<text x="350" y="159" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="31" y="169" width="328" height="21" fill="#F7F9FC"/>
+<text x="52" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="82" y="180" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">senha_hash</text>
+<text x="320" y="180" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(60)</text>
+<text x="350" y="180" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="52" y="201" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="82" y="201" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">perfil</text>
+<text x="320" y="201" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(13)</text>
+<text x="350" y="201" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="31" y="211" width="328" height="21" fill="#F7F9FC"/>
+<text x="52" y="222" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="82" y="222" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">ativo</text>
+<text x="320" y="222" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">BOOLEAN</text>
+<text x="350" y="222" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="52" y="243" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="82" y="243" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">criado_em</text>
+<text x="320" y="243" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">TIMESTAMP</text>
+<text x="350" y="243" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="640" y="70" width="400" height="271" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="640" y="70" width="400" height="32" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="840.0" y="87.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">venda</text>
+<line x1="684" y1="102" x2="684" y2="341" stroke="#ccc" stroke-width="1"/>
+<text x="662" y="117" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="692" y="117" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="700" font-style="normal" fill="#1b1b1b">id_venda</text>
+<text x="1000" y="117" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1030" y="117" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="641" y="127" width="398" height="21" fill="#F7F9FC"/>
+<text x="662" y="138" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="692" y="138" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">data_hora</text>
+<text x="1000" y="138" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">TIMESTAMP</text>
+<text x="1030" y="138" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="662" y="159" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#2B5FA8">FK</text>
+<text x="692" y="159" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">id_usuario</text>
+<text x="1000" y="159" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1030" y="159" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="641" y="169" width="398" height="21" fill="#F7F9FC"/>
+<text x="662" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#2B5FA8">FK</text>
+<text x="692" y="180" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">id_cliente</text>
+<text x="1000" y="180" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="662" y="201" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="692" y="201" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">subtotal</text>
+<text x="1000" y="201" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">NUMERIC(10,2)</text>
+<text x="1030" y="201" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="641" y="211" width="398" height="21" fill="#F7F9FC"/>
+<text x="662" y="222" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="692" y="222" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">desconto</text>
+<text x="1000" y="222" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">NUMERIC(10,2)</text>
+<text x="1030" y="222" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="662" y="243" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="692" y="243" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">valor_total</text>
+<text x="1000" y="243" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">NUMERIC(10,2)</text>
+<text x="1030" y="243" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="641" y="253" width="398" height="21" fill="#F7F9FC"/>
+<text x="662" y="264" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="692" y="264" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">status</text>
+<text x="1000" y="264" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(9)</text>
+<text x="1030" y="264" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="662" y="285" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="692" y="285" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">cancelada_em</text>
+<text x="1000" y="285" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">TIMESTAMP</text>
+<rect x="641" y="295" width="398" height="21" fill="#F7F9FC"/>
+<text x="662" y="306" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#2B5FA8">FK</text>
+<text x="692" y="306" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">id_usuario_cancelamento</text>
+<text x="1000" y="306" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="662" y="327" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="692" y="327" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">motivo_cancelamento</text>
+<text x="1000" y="327" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(200)</text>
+<rect x="1400" y="70" width="330" height="166" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="1400" y="70" width="330" height="32" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="1565.0" y="87.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">cliente</text>
+<line x1="1444" y1="102" x2="1444" y2="236" stroke="#ccc" stroke-width="1"/>
+<text x="1422" y="117" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="1452" y="117" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="700" font-style="normal" fill="#1b1b1b">id_cliente</text>
+<text x="1690" y="117" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1720" y="117" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="1401" y="127" width="328" height="21" fill="#F7F9FC"/>
+<text x="1422" y="138" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="1452" y="138" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<text x="1690" y="138" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(120)</text>
+<text x="1720" y="138" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="1422" y="159" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555">UQ</text>
+<text x="1452" y="159" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">cpf_cnpj</text>
+<text x="1690" y="159" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(14)</text>
+<text x="1720" y="159" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="1401" y="169" width="328" height="21" fill="#F7F9FC"/>
+<text x="1422" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="1452" y="180" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">email</text>
+<text x="1690" y="180" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(120)</text>
+<text x="1422" y="201" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="1452" y="201" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">telefone</text>
+<text x="1690" y="201" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(15)</text>
+<rect x="1401" y="211" width="328" height="21" fill="#F7F9FC"/>
+<text x="1422" y="222" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="1452" y="222" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">criado_em</text>
+<text x="1690" y="222" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">TIMESTAMP</text>
+<text x="1720" y="222" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="330" y="560" width="360" height="145" fill="white" stroke="#1F8A4C" stroke-width="2.2"/>
+<rect x="330" y="560" width="360" height="32" fill="#DDF3E4" stroke="#1F8A4C" stroke-width="2.2"/>
+<text x="510.0" y="577.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">pagamento</text>
+<line x1="374" y1="592" x2="374" y2="705" stroke="#ccc" stroke-width="1"/>
+<text x="352" y="607" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="382" y="607" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="700" font-style="normal" fill="#1b1b1b">id_pagamento</text>
+<text x="650" y="607" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="680" y="607" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="331" y="617" width="358" height="21" fill="#F7F9FC"/>
+<text x="352" y="628" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#2B5FA8">FK</text>
+<text x="382" y="628" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">id_venda</text>
+<text x="650" y="628" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="680" y="628" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="352" y="649" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#2B5FA8">FK</text>
+<text x="382" y="649" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">id_forma_pagamento</text>
+<text x="650" y="649" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">SMALLINT</text>
+<text x="680" y="649" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="331" y="659" width="358" height="21" fill="#F7F9FC"/>
+<text x="352" y="670" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="382" y="670" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">valor</text>
+<text x="650" y="670" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">NUMERIC(10,2)</text>
+<text x="680" y="670" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="352" y="691" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="382" y="691" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">valor_recebido</text>
+<text x="650" y="691" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">NUMERIC(10,2)</text>
+<rect x="330" y="900" width="360" height="124" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="330" y="900" width="360" height="32" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="510.0" y="917.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">forma_pagamento</text>
+<line x1="374" y1="932" x2="374" y2="1024" stroke="#ccc" stroke-width="1"/>
+<text x="352" y="947" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="382" y="947" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="700" font-style="normal" fill="#1b1b1b">id_forma_pagamento</text>
+<text x="650" y="947" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">SMALLINT</text>
+<text x="680" y="947" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="331" y="957" width="358" height="21" fill="#F7F9FC"/>
+<text x="352" y="968" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555">UQ</text>
+<text x="382" y="968" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<text x="650" y="968" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(30)</text>
+<text x="680" y="968" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="352" y="989" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="382" y="989" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">permite_troco</text>
+<text x="650" y="989" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">BOOLEAN</text>
+<text x="680" y="989" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="331" y="999" width="358" height="21" fill="#F7F9FC"/>
+<text x="352" y="1010" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="382" y="1010" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">ativo</text>
+<text x="650" y="1010" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">BOOLEAN</text>
+<text x="680" y="1010" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="900" y="560" width="360" height="145" fill="white" stroke="#1F8A4C" stroke-width="2.2"/>
+<rect x="900" y="560" width="360" height="32" fill="#DDF3E4" stroke="#1F8A4C" stroke-width="2.2"/>
+<text x="1080.0" y="577.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">item_venda</text>
+<line x1="944" y1="592" x2="944" y2="705" stroke="#ccc" stroke-width="1"/>
+<text x="922" y="607" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="952" y="607" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="700" font-style="normal" fill="#1b1b1b">id_item_venda</text>
+<text x="1220" y="607" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1250" y="607" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="901" y="617" width="358" height="21" fill="#F7F9FC"/>
+<text x="922" y="628" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#2B5FA8">FK UQ</text>
+<text x="952" y="628" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">id_venda</text>
+<text x="1220" y="628" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1250" y="628" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="922" y="649" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#2B5FA8">FK UQ</text>
+<text x="952" y="649" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">id_produto</text>
+<text x="1220" y="649" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1250" y="649" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="901" y="659" width="358" height="21" fill="#F7F9FC"/>
+<text x="922" y="670" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="952" y="670" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">quantidade</text>
+<text x="1220" y="670" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1250" y="670" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="922" y="691" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="952" y="691" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">preco_unitario</text>
+<text x="1220" y="691" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">NUMERIC(10,2)</text>
+<text x="1250" y="691" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="900" y="860" width="360" height="250" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="900" y="860" width="360" height="32" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="1080.0" y="877.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">produto</text>
+<line x1="944" y1="892" x2="944" y2="1110" stroke="#ccc" stroke-width="1"/>
+<text x="922" y="907" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="952" y="907" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="700" font-style="normal" fill="#1b1b1b">id_produto</text>
+<text x="1220" y="907" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1250" y="907" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="901" y="917" width="358" height="21" fill="#F7F9FC"/>
+<text x="922" y="928" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555">UQ</text>
+<text x="952" y="928" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">codigo</text>
+<text x="1220" y="928" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(20)</text>
+<text x="1250" y="928" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="922" y="949" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="952" y="949" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<text x="1220" y="949" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(120)</text>
+<text x="1250" y="949" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="901" y="959" width="358" height="21" fill="#F7F9FC"/>
+<text x="922" y="970" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#2B5FA8">FK</text>
+<text x="952" y="970" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">id_categoria</text>
+<text x="1220" y="970" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1250" y="970" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="922" y="991" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="952" y="991" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">preco_custo</text>
+<text x="1220" y="991" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">NUMERIC(10,2)</text>
+<text x="1250" y="991" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="901" y="1001" width="358" height="21" fill="#F7F9FC"/>
+<text x="922" y="1012" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="952" y="1012" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">preco_venda</text>
+<text x="1220" y="1012" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">NUMERIC(10,2)</text>
+<text x="1250" y="1012" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="922" y="1033" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="952" y="1033" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">quantidade_estoque</text>
+<text x="1220" y="1033" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1250" y="1033" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="901" y="1043" width="358" height="21" fill="#F7F9FC"/>
+<text x="922" y="1054" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="952" y="1054" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">estoque_minimo</text>
+<text x="1220" y="1054" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1250" y="1054" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="922" y="1075" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="952" y="1075" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">ativo</text>
+<text x="1220" y="1075" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">BOOLEAN</text>
+<text x="1250" y="1075" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="901" y="1085" width="358" height="21" fill="#F7F9FC"/>
+<text x="922" y="1096" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="952" y="1096" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">criado_em</text>
+<text x="1220" y="1096" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">TIMESTAMP</text>
+<text x="1250" y="1096" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="1400" y="1010" width="330" height="103" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="1400" y="1010" width="330" height="32" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="1565.0" y="1027.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">categoria</text>
+<line x1="1444" y1="1042" x2="1444" y2="1113" stroke="#ccc" stroke-width="1"/>
+<text x="1422" y="1057" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="1452" y="1057" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="700" font-style="normal" fill="#1b1b1b">id_categoria</text>
+<text x="1690" y="1057" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1720" y="1057" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="1401" y="1067" width="328" height="21" fill="#F7F9FC"/>
+<text x="1422" y="1078" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555">UQ</text>
+<text x="1452" y="1078" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<text x="1690" y="1078" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(60)</text>
+<text x="1720" y="1078" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="1422" y="1099" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="1452" y="1099" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">descricao</text>
+<text x="1690" y="1099" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">VARCHAR(200)</text>
+<rect x="1400" y="560" width="330" height="166" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="1400" y="560" width="330" height="32" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="1565.0" y="577.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">alerta_estoque</text>
+<line x1="1444" y1="592" x2="1444" y2="726" stroke="#ccc" stroke-width="1"/>
+<text x="1422" y="607" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="1452" y="607" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="700" font-style="normal" fill="#1b1b1b">id_alerta_estoque</text>
+<text x="1690" y="607" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1720" y="607" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="1401" y="617" width="328" height="21" fill="#F7F9FC"/>
+<text x="1422" y="628" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#2B5FA8">FK</text>
+<text x="1452" y="628" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">id_produto</text>
+<text x="1690" y="628" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1720" y="628" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="1422" y="649" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="1452" y="649" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">data_hora</text>
+<text x="1690" y="649" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">TIMESTAMP</text>
+<text x="1720" y="649" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="1401" y="659" width="328" height="21" fill="#F7F9FC"/>
+<text x="1422" y="670" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="1452" y="670" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">quantidade_no_momento</text>
+<text x="1690" y="670" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">INTEGER</text>
+<text x="1720" y="670" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="1422" y="691" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="1452" y="691" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">resolvido</text>
+<text x="1690" y="691" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">BOOLEAN</text>
+<text x="1720" y="691" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" font-style="normal" fill="#888">NN</text>
+<rect x="1401" y="701" width="328" height="21" fill="#F7F9FC"/>
+<text x="1422" y="712" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" font-style="normal" fill="#555"></text>
+<text x="1452" y="712" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.8" font-weight="400" font-style="normal" fill="#1b1b1b">resolvido_em</text>
+<text x="1690" y="712" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="normal" fill="#333">TIMESTAMP</text>
+<polyline points="360.0,116.0 500.0,116.0 500.0,158.0 640.0,158.0" fill="none" stroke="#222" stroke-width="1.7"/>
+<line x1="382.0" y1="124.0" x2="382.0" y2="108.0" stroke="#222" stroke-width="1.7"/>
+<line x1="375.0" y1="124.0" x2="375.0" y2="108.0" stroke="#222" stroke-width="1.7"/>
+<line x1="624.0" y1="158.0" x2="640.0" y2="167.0" stroke="#222" stroke-width="1.7"/>
+<line x1="624.0" y1="158.0" x2="640.0" y2="158.0" stroke="#222" stroke-width="1.7"/>
+<line x1="624.0" y1="158.0" x2="640.0" y2="149.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="610" cy="158" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="505" y="104" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="italic" fill="#444">registra</text>
+<polyline points="240.0,257.0 240.0,305.0 640.0,305.0" fill="none" stroke="#222" stroke-width="1.7" stroke-dasharray="7,5"/>
+<line x1="232.0" y1="279.0" x2="248.0" y2="279.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="240" cy="287" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<line x1="624.0" y1="305.0" x2="640.0" y2="314.0" stroke="#222" stroke-width="1.7"/>
+<line x1="624.0" y1="305.0" x2="640.0" y2="305.0" stroke="#222" stroke-width="1.7"/>
+<line x1="624.0" y1="305.0" x2="640.0" y2="296.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="610" cy="305" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="400" y="293" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="italic" fill="#444">cancela</text>
+<polyline points="1040.0,179.0 1220.0,179.0 1220.0,116.0 1400.0,116.0" fill="none" stroke="#222" stroke-width="1.7"/>
+<line x1="1056.0" y1="179.0" x2="1040.0" y2="170.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1056.0" y1="179.0" x2="1040.0" y2="179.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1056.0" y1="179.0" x2="1040.0" y2="188.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="1070" cy="179" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<line x1="1378.0" y1="108.0" x2="1378.0" y2="124.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="1370" cy="116" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="1228" y="104" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" font-style="italic" fill="#444">realiza</text>
+<polyline points="720.0,341.0 720.0,500.0 510.0,500.0 510.0,560.0" fill="none" stroke="#222" stroke-width="1.7"/>
+<line x1="712.0" y1="363.0" x2="728.0" y2="363.0" stroke="#222" stroke-width="1.7"/>
+<line x1="712.0" y1="356.0" x2="728.0" y2="356.0" stroke="#222" stroke-width="1.7"/>
+<line x1="510.0" y1="544.0" x2="501.0" y2="560.0" stroke="#222" stroke-width="1.7"/>
+<line x1="510.0" y1="544.0" x2="510.0" y2="560.0" stroke="#222" stroke-width="1.7"/>
+<line x1="510.0" y1="544.0" x2="519.0" y2="560.0" stroke="#222" stroke-width="1.7"/>
+<line x1="518.0" y1="538.0" x2="502.0" y2="538.0" stroke="#222" stroke-width="1.7"/>
+<line x1="510.0" y1="705.0" x2="510.0" y2="900.0" stroke="#222" stroke-width="1.7"/>
+<line x1="510.0" y1="721.0" x2="519.0" y2="705.0" stroke="#222" stroke-width="1.7"/>
+<line x1="510.0" y1="721.0" x2="510.0" y2="705.0" stroke="#222" stroke-width="1.7"/>
+<line x1="510.0" y1="721.0" x2="501.0" y2="705.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="510" cy="735" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<line x1="518.0" y1="878.0" x2="502.0" y2="878.0" stroke="#222" stroke-width="1.7"/>
+<line x1="518.0" y1="885.0" x2="502.0" y2="885.0" stroke="#222" stroke-width="1.7"/>
+<polyline points="960.0,341.0 960.0,500.0 1080.0,500.0 1080.0,560.0" fill="none" stroke="#222" stroke-width="1.7"/>
+<line x1="952.0" y1="363.0" x2="968.0" y2="363.0" stroke="#222" stroke-width="1.7"/>
+<line x1="952.0" y1="356.0" x2="968.0" y2="356.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1080.0" y1="544.0" x2="1071.0" y2="560.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1080.0" y1="544.0" x2="1080.0" y2="560.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1080.0" y1="544.0" x2="1089.0" y2="560.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1088.0" y1="538.0" x2="1072.0" y2="538.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1080.0" y1="705.0" x2="1080.0" y2="860.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1080.0" y1="721.0" x2="1089.0" y2="705.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1080.0" y1="721.0" x2="1080.0" y2="705.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1080.0" y1="721.0" x2="1071.0" y2="705.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="1080" cy="735" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<line x1="1088.0" y1="838.0" x2="1072.0" y2="838.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1088.0" y1="845.0" x2="1072.0" y2="845.0" stroke="#222" stroke-width="1.7"/>
+<polyline points="1260.0,906.0 1565.0,906.0 1565.0,726.0" fill="none" stroke="#222" stroke-width="1.7"/>
+<line x1="1282.0" y1="914.0" x2="1282.0" y2="898.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1275.0" y1="914.0" x2="1275.0" y2="898.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1565.0" y1="742.0" x2="1574.0" y2="726.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1565.0" y1="742.0" x2="1565.0" y2="726.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1565.0" y1="742.0" x2="1556.0" y2="726.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="1565" cy="756" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<polyline points="1260.0,969.0 1330.0,969.0 1330.0,1056.0 1400.0,1056.0" fill="none" stroke="#222" stroke-width="1.7"/>
+<line x1="1276.0" y1="969.0" x2="1260.0" y2="960.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1276.0" y1="969.0" x2="1260.0" y2="969.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1276.0" y1="969.0" x2="1260.0" y2="978.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="1290" cy="969" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<line x1="1378.0" y1="1048.0" x2="1378.0" y2="1064.0" stroke="#222" stroke-width="1.7"/>
+<line x1="1385.0" y1="1048.0" x2="1385.0" y2="1064.0" stroke="#222" stroke-width="1.7"/>
+<rect x="30" y="900" width="270" height="300" rx="6" fill="#FFFDF2" stroke="#999" stroke-width="1.3"/>
+<text x="165" y="922" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Legenda</text>
+<line x1="50.0" y1="952.0" x2="110.0" y2="952.0" stroke="#222" stroke-width="1.7"/>
+<line x1="88.0" y1="944.0" x2="88.0" y2="960.0" stroke="#222" stroke-width="1.7"/>
+<line x1="95.0" y1="944.0" x2="95.0" y2="960.0" stroke="#222" stroke-width="1.7"/>
+<text x="125" y="952" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">exatamente um</text>
+<line x1="50.0" y1="982.0" x2="110.0" y2="982.0" stroke="#222" stroke-width="1.7"/>
+<line x1="88.0" y1="974.0" x2="88.0" y2="990.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="80" cy="982" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="125" y="982" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">zero ou um</text>
+<line x1="50.0" y1="1012.0" x2="110.0" y2="1012.0" stroke="#222" stroke-width="1.7"/>
+<line x1="94.0" y1="1012.0" x2="110.0" y2="1021.0" stroke="#222" stroke-width="1.7"/>
+<line x1="94.0" y1="1012.0" x2="110.0" y2="1012.0" stroke="#222" stroke-width="1.7"/>
+<line x1="94.0" y1="1012.0" x2="110.0" y2="1003.0" stroke="#222" stroke-width="1.7"/>
+<line x1="88.0" y1="1004.0" x2="88.0" y2="1020.0" stroke="#222" stroke-width="1.7"/>
+<text x="125" y="1012" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">um ou muitos</text>
+<line x1="50.0" y1="1042.0" x2="110.0" y2="1042.0" stroke="#222" stroke-width="1.7"/>
+<line x1="94.0" y1="1042.0" x2="110.0" y2="1051.0" stroke="#222" stroke-width="1.7"/>
+<line x1="94.0" y1="1042.0" x2="110.0" y2="1042.0" stroke="#222" stroke-width="1.7"/>
+<line x1="94.0" y1="1042.0" x2="110.0" y2="1033.0" stroke="#222" stroke-width="1.7"/>
+<circle cx="80" cy="1042" r="6" fill="white" stroke="#222" stroke-width="1.6"/>
+<text x="125" y="1042" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">zero ou muitos</text>
+<text x="64" y="1082" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" font-style="normal" fill="#7A1F1F">PK</text>
+<text x="90" y="1082" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">chave primária</text>
+<text x="64" y="1104" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" font-style="normal" fill="#2B5FA8">FK</text>
+<text x="90" y="1104" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">chave estrangeira</text>
+<text x="64" y="1126" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" font-style="normal" fill="#555">UQ</text>
+<text x="90" y="1126" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">valor único (UNIQUE)</text>
+<text x="64" y="1148" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" font-style="normal" fill="#888">NN</text>
+<text x="90" y="1148" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">obrigatório (NOT NULL)</text>
+<text x="50" y="1174" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">Tracejado: FK opcional de cancelamento.</text>
+</svg>

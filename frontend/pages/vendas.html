@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vendas — HermesPDV</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body class="app">
+  <aside id="menu" class="menu"></aside>
+  <main>
+    <header class="topo"><div><h1>Vendas</h1><p class="subtitulo">Consulte por período, status, cliente ou produto (RF11)</p></div></header>
+    <form id="filtros" class="filtros">
+      <label class="curto">De<input type="date" name="inicio"></label>
+      <label class="curto">Até<input type="date" name="fim"></label>
+      <label class="curto">Status
+        <select name="status"><option value="">Todos</option><option value="CONCLUIDA">Concluída</option><option value="CANCELADA">Cancelada</option></select>
+      </label>
+      <label class="curto">Nº da venda<input name="numero" inputmode="numeric"></label>
+      <label>Cliente<input name="cliente" placeholder="nome ou CPF/CNPJ"></label>
+      <label>Produto<input name="produto" placeholder="nome ou código"></label>
+      <div class="acoes-filtro"><button class="btn primario">Buscar</button><button class="btn" type="reset">Limpar</button></div>
+    </form>
+    <div class="tabela-wrap">
+      <table>
+        <thead><tr><th>Nº</th><th>Data</th><th class="esconde-celular">Atendente</th><th>Cliente</th>
+          <th class="num esconde-celular">Itens</th><th class="num">Total</th><th>Status</th><th></th></tr></thead>
+        <tbody id="lista"></tbody>
+      </table>
+    </div>
+    <p id="resumo" class="rodape"></p>
+  </main>
+  <script src="/js/app.js"></script>
+  <script src="/js/vendas.js"></script>
+</body>
+</html>

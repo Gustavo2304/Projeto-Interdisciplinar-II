@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos — HermesPDV</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body class="app">
+  <aside id="menu" class="menu"></aside>
+  <main>
+    <header class="topo">
+      <div><h1>Produtos</h1><p class="subtitulo" id="subtitulo">Cadastro e consulta de estoque</p></div>
+      <button id="btnNovo" class="btn primario" hidden>+ Novo produto</button>
+    </header>
+    <form id="filtros" class="filtros">
+      <label>Buscar<input id="busca" type="search" placeholder="Nome ou código"></label>
+      <label class="check"><input id="baixo" type="checkbox"> só estoque baixo</label>
+      <label class="check"><input id="inativos" type="checkbox"> mostrar inativos</label>
+      <div class="acoes-filtro"><button class="btn primario">Buscar</button></div>
+    </form>
+    <div class="tabela-wrap">
+      <table>
+        <thead><tr><th>Código</th><th>Nome</th><th class="esconde-celular">Categoria</th>
+          <th class="num">Preço</th><th class="num">Estoque</th><th class="num esconde-celular">Mínimo</th><th>Situação</th><th></th></tr></thead>
+        <tbody id="lista"></tbody>
+      </table>
+    </div>
+    <p id="total" class="rodape"></p>
+  </main>
+
+  <div id="janelaProduto" class="fundo" hidden>
+    <form id="formProduto" class="janela" novalidate>
+      <h2 id="tituloProduto">Novo produto</h2>
+      <div class="grade">
+        <label>Código *<input name="codigo" maxlength="20"></label>
+        <label>Categoria *<select name="id_categoria"></select></label>
+        <label class="inteiro">Nome *<input name="nome" maxlength="120"></label>
+        <label>Preço de custo (R$)<input name="preco_custo" inputmode="decimal"></label>
+        <label>Preço de venda (R$) *<input name="preco_venda" inputmode="decimal"></label>
+        <label>Quantidade em estoque<input name="quantidade_estoque" type="number" min="0" step="1"></label>
+        <label>Estoque mínimo (alerta)<input name="estoque_minimo" type="number" min="0" step="1"></label>
+        <label class="check"><input name="ativo" type="checkbox"> Produto ativo (aparece na venda)</label>
+      </div>
+      <p class="erro-form" hidden></p>
+      <div class="acoes"><button type="button" class="btn" data-fechar>Cancelar</button><button class="btn primario">Salvar</button></div>
+    </form>
+  </div>
+
+  <div id="janelaRepor" class="fundo" hidden>
+    <form id="formRepor" class="janela pequena" novalidate>
+      <h2>Repor estoque</h2>
+      <p id="textoRepor"></p>
+      <label>Quantidade recebida *<input name="quantidade" type="number" min="1" step="1"></label>
+      <p class="erro-form" hidden></p>
+      <div class="acoes"><button type="button" class="btn" data-fechar>Cancelar</button><button class="btn primario">Somar ao estoque</button></div>
+    </form>
+  </div>
+  <script src="/js/app.js"></script>
+  <script src="/js/produtos.js"></script>
+</body>
+</html>

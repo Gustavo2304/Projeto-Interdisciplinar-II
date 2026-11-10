@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova venda — HermesPDV</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body class="app">
+  <aside id="menu" class="menu"></aside>
+  <main>
+    <header class="topo"><h1>Nova venda</h1><span class="selo info" id="etapa">1. Itens</span></header>
+
+    <div class="pdv">
+      <!-- itens -->
+      <section class="card">
+        <div class="busca-produto">
+          <input id="busca" type="search" placeholder="Nome ou código do produto (Enter para buscar)" autocomplete="off" aria-label="Buscar produto">
+          <input id="qtd" class="qtd" type="number" min="1" step="1" value="1" aria-label="Quantidade">
+          <div id="resultados" class="resultados" hidden></div>
+        </div>
+        <div class="carrinho tabela-wrap">
+          <table>
+            <thead><tr><th>Produto</th><th>Qtd</th><th class="num esconde-celular">Preço</th><th class="num">Subtotal</th><th></th></tr></thead>
+            <tbody id="itens"></tbody>
+          </table>
+          <p id="vazio" class="vazio">Nenhum item ainda. Busque um produto acima.</p>
+        </div>
+      </section>
+
+      <!-- resumo e pagamento -->
+      <aside class="card resumo">
+        <div id="passoResumo">
+          <div class="bloco">
+            <label>Cliente (opcional)
+              <input id="buscaCliente" type="search" placeholder="CPF/CNPJ ou nome" autocomplete="off">
+            </label>
+            <div id="resultadosCliente" class="resultados" style="position:static" hidden></div>
+            <div id="clienteEscolhido" class="cliente-escolhido" hidden></div>
+          </div>
+          <div class="bloco"><label>Desconto (R$)<input id="desconto" inputmode="decimal" placeholder="0,00"></label></div>
+          <div class="linha"><span>Subtotal</span><span id="subtotal">R$ 0,00</span></div>
+          <div class="linha"><span>Desconto</span><span id="valorDesconto">R$ 0,00</span></div>
+          <div class="linha total"><span>Total</span><span id="total">R$ 0,00</span></div>
+          <div class="pilha" style="margin-top:14px">
+            <button id="btnPagar" class="btn primario grande" disabled>Ir para pagamento</button>
+            <button id="btnLimpar" class="btn contorno-perigo">Cancelar venda em andamento</button>
+          </div>
+        </div>
+
+        <div id="passoPagamento" hidden>
+          <div class="linha total" style="border:0;margin:0;padding-top:0"><span>Total</span><span id="totalPagar"></span></div>
+          <ul class="pagamentos-lista" id="pagamentos"></ul>
+          <div class="linha"><span>Restante</span><span id="restante" class="restante"></span></div>
+          <div class="linha" id="linhaTroco" hidden><span>Troco</span><strong id="troco"></strong></div>
+          <form id="formPagamento" class="pilha" style="margin-top:10px">
+            <label>Forma de pagamento<select id="forma"></select></label>
+            <div class="duas">
+              <label>Valor (R$)<input id="valorPg" inputmode="decimal"></label>
+              <label id="campoRecebido">Recebido (R$)<input id="recebido" inputmode="decimal" placeholder="opcional"></label>
+            </div>
+            <button class="btn">+ Adicionar pagamento</button>
+          </form>
+          <div class="pilha" style="margin-top:14px">
+            <button id="btnFinalizar" class="btn sucesso grande" disabled>Finalizar venda</button>
+            <button id="btnVoltar" class="btn">Voltar aos itens</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script src="/js/app.js"></script>
+  <script src="/js/pdv.js"></script>
+</body>
+</html>

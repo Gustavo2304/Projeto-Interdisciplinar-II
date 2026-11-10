@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relatórios — HermesPDV</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body class="app">
+  <aside id="menu" class="menu"></aside>
+  <main>
+    <header class="topo">
+      <div><h1>Relatório de vendas</h1><p class="subtitulo" id="periodoTexto"></p></div>
+      <div class="nao-imprimir" style="display:flex;gap:8px;flex-wrap:wrap">
+        <a id="btnCsv" class="btn" href="#">Exportar CSV (Excel)</a>
+        <button id="btnPdf" class="btn">Imprimir / salvar PDF</button>
+      </div>
+    </header>
+    <form id="filtros" class="filtros">
+      <label class="curto">De<input type="date" name="inicio"></label>
+      <label class="curto">Até<input type="date" name="fim"></label>
+      <div class="acoes-filtro"><button class="btn primario">Gerar relatório</button></div>
+    </form>
+
+    <div class="kpis" id="totais"></div>
+    <div class="grade-cards">
+      <div class="card">
+        <h2>Vendas por dia (RF14)</h2>
+        <div class="tabela-wrap"><table>
+          <thead><tr><th>Dia</th><th class="num">Vendas</th><th class="num">Total</th><th class="num">Ticket médio</th></tr></thead>
+          <tbody id="porDia"></tbody><tfoot id="porDiaTotal"></tfoot>
+        </table></div>
+      </div>
+      <div>
+        <div class="card">
+          <h2>Total por forma de pagamento (RF16)</h2>
+          <div class="tabela-wrap"><table>
+            <thead><tr><th>Forma</th><th class="num">Pagamentos</th><th class="num">Total</th><th class="num">%</th></tr></thead>
+            <tbody id="porForma"></tbody><tfoot id="porFormaTotal"></tfoot>
+          </table></div>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <h2>Produtos mais vendidos (RF15)</h2>
+          <div class="tabela-wrap"><table>
+            <thead><tr><th>Produto</th><th class="num">Unidades</th><th class="num">Faturamento</th></tr></thead>
+            <tbody id="maisVendidos"></tbody>
+          </table></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/js/app.js"></script>
+  <script src="/js/relatorios.js"></script>
+</body>
+</html>

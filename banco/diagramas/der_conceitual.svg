@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1080" viewBox="0 0 1720 1080" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif">
+<rect width="1720" height="1080" fill="white"/>
+<defs>
+<marker id="open" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+  <path d="M1,1 L10,5 L1,9" fill="none" stroke="#222" stroke-width="1.5"/></marker>
+<marker id="filled" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+  <path d="M0,0 L10,5 L0,10 Z" fill="#222"/></marker>
+<marker id="hollow" markerWidth="16" markerHeight="16" refX="14" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+  <path d="M1,1 L14,7 L1,13 Z" fill="white" stroke="#222" stroke-width="1.5"/></marker>
+</defs>
+<text x="860.0" y="30" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="21" font-weight="700" font-style="normal" fill="#1b1b1b">Modelo conceitual (DER) — HermesPDV</text>
+<rect x="40" y="70" width="250" height="184" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="40" y="70" width="250" height="34" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="165.0" y="88.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">USUARIO</text>
+<circle cx="56" cy="118" r="5" fill="#222" stroke="#222" stroke-width="1.4"/>
+<text x="70" y="119" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">id_usuario</text>
+<circle cx="56" cy="138" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="70" y="139" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<circle cx="56" cy="158" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="70" y="159" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">login</text>
+<circle cx="56" cy="178" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="70" y="179" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">senha_hash</text>
+<circle cx="56" cy="198" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="70" y="199" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">perfil</text>
+<circle cx="56" cy="218" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="70" y="219" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">ativo</text>
+<circle cx="56" cy="238" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="70" y="239" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">criado_em</text>
+<rect x="650" y="70" width="300" height="204" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="650" y="70" width="300" height="34" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="800.0" y="88.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">VENDA</text>
+<circle cx="666" cy="118" r="5" fill="#222" stroke="#222" stroke-width="1.4"/>
+<text x="680" y="119" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">id_venda</text>
+<circle cx="666" cy="138" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="680" y="139" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">data_hora</text>
+<circle cx="666" cy="158" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="680" y="159" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">subtotal</text>
+<circle cx="666" cy="178" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="680" y="179" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">desconto</text>
+<circle cx="666" cy="198" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="680" y="199" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">valor_total</text>
+<circle cx="666" cy="218" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="680" y="219" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">status</text>
+<circle cx="666" cy="238" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="680" y="239" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">cancelada_em</text>
+<circle cx="666" cy="258" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="680" y="259" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">motivo_cancelamento</text>
+<rect x="1400" y="70" width="280" height="164" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="1400" y="70" width="280" height="34" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="1540.0" y="88.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">CLIENTE</text>
+<circle cx="1416" cy="118" r="5" fill="#222" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="119" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">id_cliente</text>
+<circle cx="1416" cy="138" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="139" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<circle cx="1416" cy="158" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="159" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">cpf_cnpj</text>
+<circle cx="1416" cy="178" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="179" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">email</text>
+<circle cx="1416" cy="198" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="199" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">telefone</text>
+<circle cx="1416" cy="218" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="219" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">criado_em</text>
+<rect x="380" y="480" width="260" height="104" fill="white" stroke="#1F8A4C" stroke-width="2.2"/>
+<rect x="380" y="480" width="260" height="34" fill="#DDF3E4" stroke="#1F8A4C" stroke-width="2.2"/>
+<polygon points="388,497.0 402,486.0 416,497.0 402,508.0" fill="white" stroke="#1F8A4C" stroke-width="1.8"/>
+<text x="520.0" y="498.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">PAGAMENTO</text>
+<circle cx="396" cy="528" r="5" fill="#222" stroke="#222" stroke-width="1.4"/>
+<text x="410" y="529" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">id_pagamento</text>
+<circle cx="396" cy="548" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="410" y="549" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">valor</text>
+<circle cx="396" cy="568" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="410" y="569" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">valor_recebido</text>
+<rect x="380" y="790" width="260" height="124" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="380" y="790" width="260" height="34" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="510.0" y="808.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">FORMA_PAGAMENTO</text>
+<circle cx="396" cy="838" r="5" fill="#222" stroke="#222" stroke-width="1.4"/>
+<text x="410" y="839" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">id_forma_pagamento</text>
+<circle cx="396" cy="858" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="410" y="859" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<circle cx="396" cy="878" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="410" y="879" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">permite_troco</text>
+<circle cx="396" cy="898" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="410" y="899" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">ativo</text>
+<rect x="930" y="480" width="260" height="104" fill="white" stroke="#1F8A4C" stroke-width="2.2"/>
+<rect x="930" y="480" width="260" height="34" fill="#DDF3E4" stroke="#1F8A4C" stroke-width="2.2"/>
+<polygon points="938,497.0 952,486.0 966,497.0 952,508.0" fill="white" stroke="#1F8A4C" stroke-width="1.8"/>
+<text x="1070.0" y="498.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">ITEM_VENDA</text>
+<circle cx="946" cy="528" r="5" fill="#222" stroke="#222" stroke-width="1.4"/>
+<text x="960" y="529" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">id_item_venda</text>
+<circle cx="946" cy="548" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="960" y="549" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">quantidade</text>
+<circle cx="946" cy="568" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="960" y="569" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">preco_unitario</text>
+<rect x="910" y="790" width="300" height="224" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="910" y="790" width="300" height="34" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="1060.0" y="808.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">PRODUTO</text>
+<circle cx="926" cy="838" r="5" fill="#222" stroke="#222" stroke-width="1.4"/>
+<text x="940" y="839" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">id_produto</text>
+<circle cx="926" cy="858" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="940" y="859" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">codigo</text>
+<circle cx="926" cy="878" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="940" y="879" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<circle cx="926" cy="898" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="940" y="899" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">preco_custo</text>
+<circle cx="926" cy="918" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="940" y="919" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">preco_venda</text>
+<circle cx="926" cy="938" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="940" y="939" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">quantidade_estoque</text>
+<circle cx="926" cy="958" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="940" y="959" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">estoque_minimo</text>
+<circle cx="926" cy="978" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="940" y="979" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">ativo</text>
+<circle cx="926" cy="998" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="940" y="999" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">criado_em</text>
+<rect x="1420" y="900" width="260" height="104" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="1420" y="900" width="260" height="34" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="1550.0" y="918.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">CATEGORIA</text>
+<circle cx="1436" cy="948" r="5" fill="#222" stroke="#222" stroke-width="1.4"/>
+<text x="1450" y="949" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">id_categoria</text>
+<circle cx="1436" cy="968" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1450" y="969" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">nome</text>
+<circle cx="1436" cy="988" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1450" y="989" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">descricao</text>
+<rect x="1400" y="480" width="280" height="144" fill="white" stroke="#2B5FA8" stroke-width="2.2"/>
+<rect x="1400" y="480" width="280" height="34" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2.2"/>
+<text x="1540.0" y="498.0" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" font-style="normal" fill="#1b1b1b">ALERTA_ESTOQUE</text>
+<circle cx="1416" cy="528" r="5" fill="#222" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="529" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">id_alerta_estoque</text>
+<circle cx="1416" cy="548" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="549" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">data_hora</text>
+<circle cx="1416" cy="568" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="569" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">quantidade_no_momento</text>
+<circle cx="1416" cy="588" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="589" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">resolvido</text>
+<circle cx="1416" cy="608" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="1430" y="609" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="normal" fill="#1b1b1b">resolvido_em</text>
+<line x1="290.0" y1="125.0" x2="650.0" y2="125.0" stroke="#222" stroke-width="1.8"/>
+<polygon points="418.0,125 470,102.0 522.0,125 470,148.0" fill="#FFF8DC" stroke="#8A6D1F" stroke-width="2"/>
+<text x="470" y="126" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">registra</text>
+<text x="300" y="112" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(1,1)</text>
+<text x="640" y="112" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,n)</text>
+<line x1="290.0" y1="215.0" x2="650.0" y2="215.0" stroke="#222" stroke-width="1.8"/>
+<polygon points="418.0,215 470,192.0 522.0,215 470,238.0" fill="#FFF8DC" stroke="#8A6D1F" stroke-width="2"/>
+<text x="470" y="216" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">cancela</text>
+<text x="300" y="202" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,1)</text>
+<text x="640" y="202" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,n)</text>
+<line x1="950.0" y1="140.0" x2="1400.0" y2="140.0" stroke="#222" stroke-width="1.8"/>
+<polygon points="1123.0,140 1175,117.0 1227.0,140 1175,163.0" fill="#FFF8DC" stroke="#8A6D1F" stroke-width="2"/>
+<text x="1175" y="141" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">realiza</text>
+<text x="960" y="127" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,n)</text>
+<text x="1390" y="127" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,1)</text>
+<polyline points="720.0,274.0 720.0,420.0 510.0,420.0 510.0,480.0" fill="none" stroke="#222" stroke-width="1.8"/>
+<text x="730" y="294" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,n)</text>
+<line x1="510.0" y1="584.0" x2="510.0" y2="790.0" stroke="#222" stroke-width="1.8"/>
+<text x="520" y="780" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(1,n)</text>
+<text x="560" y="405" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="italic" fill="#444">é paga com</text>
+<polyline points="880.0,274.0 880.0,420.0 1060.0,420.0 1060.0,480.0" fill="none" stroke="#222" stroke-width="1.8"/>
+<text x="870" y="294" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,n)</text>
+<line x1="1060.0" y1="584.0" x2="1060.0" y2="790.0" stroke="#222" stroke-width="1.8"/>
+<text x="1070" y="780" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(1,n)</text>
+<text x="1000" y="405" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400" font-style="italic" fill="#444">contém</text>
+<polyline points="1210.0,830.0 1540.0,830.0 1540.0,624.0" fill="none" stroke="#222" stroke-width="1.8"/>
+<polygon points="1497.0,718 1540,695.0 1583.0,718 1540,741.0" fill="#FFF8DC" stroke="#8A6D1F" stroke-width="2"/>
+<text x="1540" y="719" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">gera</text>
+<text x="1220" y="818" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(1,1)</text>
+<text x="1550" y="642" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,n)</text>
+<line x1="1210.0" y1="950.0" x2="1420.0" y2="950.0" stroke="#222" stroke-width="1.8"/>
+<polygon points="1260.0,950 1315,927.0 1370.0,950 1315,973.0" fill="#FFF8DC" stroke="#8A6D1F" stroke-width="2"/>
+<text x="1315" y="951" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" font-style="normal" fill="#1b1b1b">classifica</text>
+<text x="1220" y="937" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,n)</text>
+<text x="1410" y="937" text-anchor="end" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="700" font-style="normal" fill="#7A1F1F">(1,1)</text>
+<rect x="40" y="420" width="300" height="300" rx="6" fill="#FFFDF2" stroke="#999" stroke-width="1.3"/>
+<text x="190" y="442" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" font-style="normal" fill="#1b1b1b">Legenda</text>
+<rect x="56" y="460" width="40" height="22" fill="#DCEBFC" stroke="#2B5FA8" stroke-width="2"/>
+<text x="106" y="472" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">entidade</text>
+<rect x="56" y="494" width="40" height="22" fill="#DDF3E4" stroke="#1F8A4C" stroke-width="2"/>
+<polygon points="64,505 76,497 88,505 76,513" fill="white" stroke="#1F8A4C" stroke-width="1.5"/>
+<text x="106" y="500" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">entidade associativa</text>
+<text x="106" y="516" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#555">(resolve um relacionamento N:N)</text>
+<polygon points="56,544 76,532 96,544 76,556" fill="#FFF8DC" stroke="#8A6D1F" stroke-width="1.8"/>
+<text x="106" y="545" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">relacionamento</text>
+<circle cx="76" cy="578" r="5" fill="#222"/>
+<text x="106" y="579" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">identificador (chave primária)</text>
+<circle cx="76" cy="602" r="5" fill="white" stroke="#222" stroke-width="1.4"/>
+<text x="106" y="603" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">atributo</text>
+<text x="76" y="628" text-anchor="middle" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="700" font-style="normal" fill="#7A1F1F">(0,n)</text>
+<text x="106" y="628" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="400" font-style="normal" fill="#1b1b1b">cardinalidade (mínima, máxima)</text>
+<text x="56" y="656" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">A cardinalidade junto a uma entidade diz</text>
+<text x="56" y="672" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">com quantas ocorrências dela uma ocorrência</text>
+<text x="56" y="688" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">da outra se associa. Ex.: cada venda é</text>
+<text x="56" y="704" text-anchor="start" dominant-baseline="middle" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" font-style="normal" fill="#444">registrada por (1,1) usuário.</text>
+</svg>

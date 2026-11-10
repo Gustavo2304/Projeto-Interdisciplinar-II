@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel — HermesPDV</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body class="app">
+  <aside id="menu" class="menu"></aside>
+  <main>
+    <header class="topo">
+      <div>
+        <h1 id="saudacao">Painel</h1>
+        <p class="subtitulo" id="subtitulo"></p>
+      </div>
+    </header>
+
+    <!-- atendente: atalhos e alertas -->
+    <section id="areaAtendente" hidden>
+      <div class="atalhos">
+        <a class="atalho" href="pdv.html"><strong>Nova venda</strong><span>Registrar uma venda no caixa</span></a>
+        <a class="atalho" href="produtos.html"><strong>Consultar estoque</strong><span>Buscar produto por nome ou código</span></a>
+        <a class="atalho" href="vendas.html"><strong>Vendas</strong><span>Consultar, ver comprovante e cancelar</span></a>
+      </div>
+    </section>
+
+    <!-- gerente e administrador: dashboard gerencial -->
+    <section id="areaGestao" hidden>
+      <form id="formPeriodo" class="filtros">
+        <label class="curto">De<input type="date" name="inicio"></label>
+        <label class="curto">Até<input type="date" name="fim"></label>
+        <div class="acoes-filtro">
+          <button class="btn primario">Atualizar</button>
+          <button class="btn" type="button" id="btnPadrao">Últimos 30 dias</button>
+        </div>
+      </form>
+      <div class="kpis" id="kpis"></div>
+      <p class="legenda-kpi"><i></i>Indicadores de desempenho definidos na Aula 3 (processo TO-BE).</p>
+      <div class="grade-cards duas">
+        <div class="card largo"><h2>Faturamento por dia</h2><div class="grafico" id="grafDias"></div></div>
+        <div class="card"><h2>Total por forma de pagamento</h2><div class="barras-h" id="grafFormas"></div></div>
+        <div class="card"><h2>Produtos mais vendidos</h2><div class="barras-h" id="grafTop"></div></div>
+      </div>
+    </section>
+
+    <div class="grade-cards">
+      <div class="card">
+        <h2>Alertas de estoque baixo <span class="selo baixo" id="qtdAlertas">0</span></h2>
+        <ul class="lista-alertas" id="alertas"></ul>
+      </div>
+    </div>
+  </main>
+  <script src="/js/app.js"></script>
+  <script src="/js/painel.js"></script>
+</body>
+</html>

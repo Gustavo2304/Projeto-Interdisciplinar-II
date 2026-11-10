@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usuários — HermesPDV</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body class="app">
+  <aside id="menu" class="menu"></aside>
+  <main>
+    <header class="topo">
+      <div><h1>Usuários</h1><p class="subtitulo">Quem acessa o sistema e com qual perfil (RN04)</p></div>
+      <button id="btnNovo" class="btn primario">+ Novo usuário</button>
+    </header>
+    <form id="filtros" class="filtros">
+      <label>Buscar<input id="busca" type="search" placeholder="Nome ou login"></label>
+      <div class="acoes-filtro"><button class="btn primario">Buscar</button></div>
+    </form>
+    <div class="tabela-wrap">
+      <table>
+        <thead><tr><th>Nome</th><th>Login</th><th>Perfil</th><th>Situação</th><th class="num esconde-celular">Vendas</th><th></th></tr></thead>
+        <tbody id="lista"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <div id="janelaUsuario" class="fundo" hidden>
+    <form id="formUsuario" class="janela" novalidate>
+      <h2 id="tituloUsuario">Novo usuário</h2>
+      <div class="grade">
+        <label class="inteiro">Nome *<input name="nome" maxlength="100"></label>
+        <label>Login *<input name="login" maxlength="30" autocomplete="off" placeholder="ex.: maria.caixa"></label>
+        <label>Perfil *
+          <select name="perfil">
+            <option value="">Selecione...</option>
+            <option value="ATENDENTE">Atendente — vendas e consultas</option>
+            <option value="GERENTE">Gerente — consultas e relatórios</option>
+            <option value="ADMINISTRADOR">Administrador — tudo do gerente e cadastros</option>
+          </select>
+        </label>
+        <label class="inteiro"><span id="rotuloSenha">Senha *</span>
+          <input name="senha" type="password" autocomplete="new-password" placeholder="mínimo de 8 caracteres, com letras e números"></label>
+        <label class="check"><input name="ativo" type="checkbox"> Usuário ativo (pode entrar no sistema)</label>
+      </div>
+      <p class="erro-form" hidden></p>
+      <div class="acoes"><button type="button" class="btn" data-fechar>Cancelar</button><button class="btn primario">Salvar</button></div>
+    </form>
+  </div>
+  <script src="/js/app.js"></script>
+  <script src="/js/usuarios.js"></script>
+</body>
+</html>
