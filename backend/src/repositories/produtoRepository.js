@@ -1,5 +1,6 @@
 // SQL da tabela produto. Sempre com parâmetros ($1, $2...) para evitar SQL injection.
 const db = require('../config/db');
+const { termoLike } = require('../utils/validacao');
 
 const CAMPOS = `p.id_produto, p.codigo, p.nome, p.id_categoria, c.nome AS categoria,
                 p.preco_custo, p.preco_venda, p.quantidade_estoque, p.estoque_minimo, p.ativo,
@@ -10,11 +11,11 @@ async function listar({ busca, incluirInativos, somenteBaixo, limite = 500 }) {
     `SELECT ${CAMPOS}
        FROM produto p
        JOIN categoria c ON c.id_categoria = p.id_categoria
-      WHERE ($1::text IS NULL OR p.nome ILIKE '%' || $1 || '%' OR p.codigo = $1)
+      WHERE ($1::text IS NULL OR p.nome ILIKE '%' || $1 || '%' OR p.codigo = $5)
         AND ($2::boolean OR p.ativo)
         AND (NOT $3::boolean OR p.quantidade_estoque <= p.estoque_minimo)
       ORDER BY p.nome
-      LIMIT $4`, [busca || null, Boolean(incluirInativos), Boolean(somenteBaixo), limite]);
+      LIMIT $4`, [busca ? termoLike(busca) : null, Boolean(incluirInativos), Boolean(somenteBaixo), limite, busca || null]);
   return rows;
 }
 

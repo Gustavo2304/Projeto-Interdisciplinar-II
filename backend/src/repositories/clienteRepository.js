@@ -1,5 +1,6 @@
 // SQL da tabela cliente.
 const db = require('../config/db');
+const { termoLike } = require('../utils/validacao');
 
 const CAMPOS = `c.id_cliente, c.nome, c.cpf_cnpj, c.email, c.telefone,
                 TO_CHAR(c.criado_em, 'YYYY-MM-DD HH24:MI') AS criado_em`;
@@ -11,7 +12,7 @@ async function listar({ busca }) {
        FROM cliente c
       WHERE ($1::text IS NULL OR c.nome ILIKE '%' || $1 || '%' OR c.cpf_cnpj LIKE $2 || '%')
       ORDER BY c.nome
-      LIMIT 200`, [busca || null, (busca || '').replace(/\D/g, '') || '#']);
+      LIMIT 200`, [busca ? termoLike(busca) : null, (busca || '').replace(/\D/g, '') || '#']);
   return rows;
 }
 

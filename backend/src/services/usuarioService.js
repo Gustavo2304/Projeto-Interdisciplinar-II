@@ -31,7 +31,7 @@ function validar(d, novo) {
 const listar = (q) => repo.listar({ busca: q.busca ? String(q.busca).trim().slice(0, 60) : null });
 
 async function buscar(id) {
-  const u = await repo.buscarPorId(v.id(id));
+  const u = await repo.buscarPorId(v.id(id, 'Usuário inválido.'));
   if (!u) throw new ErroApi(404, 'Usuário não encontrado.');
   return u;
 }
@@ -39,7 +39,7 @@ async function buscar(id) {
 const criar = (dados) => repo.criar(validar(dados, true));
 
 async function atualizar(id, dados, logado) {
-  const n = v.id(id);
+  const n = v.id(id, 'Usuário inválido.');
   const u = validar(dados, false);
   if (n === logado.id_usuario && (u.perfil !== logado.perfil || !u.ativo)) {
     throw new ErroApi(400, 'Você não pode alterar o próprio perfil nem inativar a si mesmo.');
@@ -51,7 +51,7 @@ async function atualizar(id, dados, logado) {
 
 // Usuário que já registrou ou cancelou vendas é inativado, para preservar o histórico.
 async function excluir(id, logado) {
-  const n = v.id(id);
+  const n = v.id(id, 'Usuário inválido.');
   if (n === logado.id_usuario) throw new ErroApi(400, 'Você não pode excluir o próprio usuário.');
   if (!(await repo.buscarPorId(n))) throw new ErroApi(404, 'Usuário não encontrado.');
   if (await repo.possuiVendas(n)) {

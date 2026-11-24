@@ -2,9 +2,16 @@
 
 Sistema de Ponto de Venda (PDV) web para pequenos comércios: vendas com várias formas de pagamento,
 baixa automática de estoque com alerta de estoque baixo, cadastros, consultas, relatório gerencial
-e dashboard com indicadores. Projeto da disciplina **Projeto Interdisciplinar II** (Prof. Rafael Gross).
+e dashboard com indicadores.
 
-## O que já funciona (MVP — Aula 6)
+Projeto da disciplina **Projeto Interdisciplinar II** (Prof. Rafael Gross), do curso superior de tecnologia em
+**Gestão da Tecnologia da Informação** da **Faculdade de Tecnologia de Jundiaí (Fatec Jundiaí)**, Jundiaí/SP, 2026.
+
+**Equipe:** Gustavo Pinheiro Correia · Gustavo Cena Viana · Matheus Alvez
+
+**Versão atual: v1.0.0** (entrega final, Aula 7). Histórico em [CHANGELOG.md](CHANGELOG.md).
+
+## Funcionalidades (v1.0.0)
 
 | Área | Funcionalidades |
 |---|---|
@@ -65,8 +72,13 @@ Com o servidor rodando e os dados de teste carregados:
 
 ```bash
 cd backend
-npm test        # 15 testes: login, perfis, venda, cancelamento, regras, CRUDs, relatório e API
+npm test        # 18 testes: login, perfis, venda, cancelamento, regras, CRUDs, relatório, API e regressão
 ```
+
+Além dos testes automáticos, o sistema passou por um **plano de testes funcionais com 27 casos** (caminho feliz,
+campo vazio, dado inválido, acesso sem permissão e duplicidade), executado pela interface. A primeira rodada,
+sobre o código da Aula 6, teve 23 aprovados; os 7 defeitos encontrados foram corrigidos e a rodada final teve
+27 de 27. Plano, defeitos e evidências de antes e depois: [docs/testes](docs/testes/README.md).
 
 ## Regras de negócio no código
 
@@ -116,8 +128,21 @@ frontend/
   js/               um script por tela + app.js (funções comuns)
   css/              estilo único, responsivo e com layout de impressão
 banco/              scripts SQL, migração, consultas, dicionário de dados e diagramas
-docs/               documentação das aulas
+docs/
+  documentacao/     documentação final consolidada (PDF)
+  processos/        BPMN AS-IS e TO-BE
+  uml/              casos de uso, classes e sequência
+  arquitetura/      diagrama de arquitetura
+  prototipo/        protótipo das telas (Aula 4)
+  testes/           plano de testes, defeitos e evidências
 ```
+
+## Documentação
+
+- [Documentação final consolidada (PDF)](docs/documentacao/HermesPDV_Documentacao_Final.pdf): requisitos, processos,
+  UML, banco de dados, manual de instalação, manual do usuário, testes, gestão do projeto e conclusão.
+- [Banco de dados](banco/README.md): scripts, dicionário de dados e diagramas.
+- [Testes](docs/testes/README.md): plano com 27 casos, defeitos e evidências.
 
 ## Publicar na nuvem (opcional)
 
@@ -130,14 +155,27 @@ do plano gratuito no momento da publicação).
 3. Configure as variáveis de ambiente: `DATABASE_URL` (URL de conexão do banco), `PGSSL=true`,
    `SESSAO_SEGREDO` (texto longo e aleatório) e `NODE_ENV=production`.
 
+## Versões
+
+As entregas são marcadas com tags no Git. Para marcar a versão final (uma única vez, na branch `main`):
+
+```bash
+git checkout main && git pull
+git tag -a v1.0.0 -m "HermesPDV 1.0.0 — entrega final (Aula 7)"
+git push origin v1.0.0
+```
+
+No GitHub, em **Releases → Draft a new release**, escolha a tag `v1.0.0` e cole o trecho da versão do `CHANGELOG.md`.
+
 ## Equipe
 
-| Integrante | Papel | GitHub |
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Integrante | Instituição e curso |
+|---|---|
+| Gustavo Pinheiro Correia | Fatec Jundiaí · Gestão da Tecnologia da Informação |
+| Gustavo Cena Viana | Fatec Jundiaí · Gestão da Tecnologia da Informação |
+| Matheus Alvez | Fatec Jundiaí · Gestão da Tecnologia da Informação |
+
+Disciplina: Projeto Interdisciplinar II · Professor: Rafael Gross · Jundiaí/SP, 2026.
 
 ## Como trabalhamos
 

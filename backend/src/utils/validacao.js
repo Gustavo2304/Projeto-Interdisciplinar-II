@@ -45,13 +45,23 @@ function texto(valor, campo, { min = 1, max = 255, obrigatorio = true } = {}) {
   return s;
 }
 
-function id(valor, nome = 'Identificador') {
+// Aula 7 (D04): a mensagem vem pronta, com a concordância certa ("Número de venda inválido.").
+// O limite superior evita estourar o tipo INTEGER do banco.
+function id(valor, mensagem = 'Identificador inválido.') {
   const n = Number(valor);
-  if (!Number.isInteger(n) || n <= 0) throw new ErroApi(400, `${nome} inválido.`);
+  if (!Number.isInteger(n) || n <= 0 || n > 2147483647) throw new ErroApi(400, mensagem);
   return n;
 }
 
-const dataValida = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s) && !Number.isNaN(Date.parse(`${s}T00:00:00`));
+// Aula 7 (D03): além do formato, confere se a data existe no calendário (31/02 é recusada).
+function dataValida(s) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return false;
+  const d = new Date(`${s}T00:00:00Z`);
+  return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === s;
+}
+
+// Aula 7 (D05): escapa os curingas do LIKE (% e _) para que a busca trate o texto literalmente.
+const termoLike = (s) => String(s).replace(/[\\%_]/g, (c) => `\\${c}`);
 
 // Período de consulta: valida datas no formato AAAA-MM-DD (as duas opcionais).
 function periodo(inicio, fim) {
@@ -61,4 +71,4 @@ function periodo(inicio, fim) {
   return { inicio: inicio || null, fim: fim || null };
 }
 
-module.exports = { soDigitos, centavos, reais, cpfValido, cnpjValido, texto, id, periodo, dataValida };
+module.exports = { soDigitos, centavos, reais, cpfValido, cnpjValido, texto, id, periodo, dataValida, termoLike };

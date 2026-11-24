@@ -27,7 +27,7 @@ function lerItens(lista) {
   if (!Array.isArray(lista) || lista.length === 0) throw new ErroApi(400, 'Adicione ao menos um produto à venda.');
   const porProduto = new Map();
   for (const it of lista) {
-    const id = v.id(it.id_produto, 'Produto');
+    const id = v.id(it.id_produto, 'Produto inválido na venda.');
     const qtd = Number(it.quantidade);
     if (!Number.isInteger(qtd) || qtd <= 0 || qtd > 9999) throw new ErroApi(400, 'Quantidade inválida em um dos itens.');
     porProduto.set(id, (porProduto.get(id) || 0) + qtd);
@@ -42,7 +42,7 @@ async function registrar(dados, usuario) {
   if (!Array.isArray(dados.pagamentos) || dados.pagamentos.length === 0) {
     throw new ErroApi(400, 'Informe ao menos uma forma de pagamento.');
   }
-  const idCliente = dados.id_cliente ? v.id(dados.id_cliente, 'Cliente') : null;
+  const idCliente = dados.id_cliente ? v.id(dados.id_cliente, 'Cliente inválido.') : null;
   if (idCliente && !(await clientes.buscarPorId(idCliente))) throw new ErroApi(400, 'Cliente não encontrado.');
 
   return transacao(async (cx) => {
@@ -100,7 +100,7 @@ async function registrar(dados, usuario) {
 }
 
 async function cancelar(id, dados, usuario) {
-  const n = v.id(id, 'Venda');
+  const n = v.id(id, 'Número de venda inválido.');
   const motivo = String(dados.motivo || '').trim();
   if (motivo.length < 5 || motivo.length > 200) {                // RN08
     throw new ErroApi(400, 'Informe o motivo do cancelamento (de 5 a 200 caracteres).');
@@ -123,14 +123,14 @@ function listar(q) {
   if (status && !['CONCLUIDA', 'CANCELADA'].includes(status)) throw new ErroApi(400, 'Status inválido.');
   return vendas.listar({
     inicio, fim, status,
-    numero: q.numero ? v.id(q.numero, 'Número da venda') : null,
+    numero: q.numero ? v.id(q.numero, 'Número de venda inválido.') : null,
     cliente: q.cliente ? String(q.cliente).trim().slice(0, 60) : null,
     produto: q.produto ? String(q.produto).trim().slice(0, 60) : null,
   });
 }
 
 async function buscar(id) {
-  const venda = await vendas.buscarCompleta(v.id(id, 'Venda'));
+  const venda = await vendas.buscarCompleta(v.id(id, 'Número de venda inválido.'));
   if (!venda) throw new ErroApi(404, 'Venda não encontrada.');
   return venda;
 }

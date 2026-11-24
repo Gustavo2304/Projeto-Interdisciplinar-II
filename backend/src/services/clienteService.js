@@ -22,7 +22,7 @@ function validar(d) {
 const listar = (q) => repo.listar({ busca: q.busca ? String(q.busca).trim().slice(0, 60) : null });
 
 async function buscar(id) {
-  const c = await repo.buscarPorId(v.id(id));
+  const c = await repo.buscarPorId(v.id(id, 'Cliente inválido.'));
   if (!c) throw new ErroApi(404, 'Cliente não encontrado.');
   return c;
 }
@@ -30,13 +30,13 @@ async function buscar(id) {
 const criar = (dados) => repo.criar(validar(dados));
 
 async function atualizar(id, dados) {
-  const c = await repo.atualizar(v.id(id), validar(dados));
+  const c = await repo.atualizar(v.id(id, 'Cliente inválido.'), validar(dados));
   if (!c) throw new ErroApi(404, 'Cliente não encontrado.');
   return c;
 }
 
 async function excluir(id) {
-  const n = v.id(id);
+  const n = v.id(id, 'Cliente inválido.');
   if (!(await repo.buscarPorId(n))) throw new ErroApi(404, 'Cliente não encontrado.');
   if (await repo.possuiVendas(n)) {
     throw new ErroApi(409, 'Este cliente tem vendas registradas e não pode ser excluído: o histórico precisa ser mantido (RNF05).');

@@ -1,5 +1,6 @@
 // SQL da tabela usuario. Hash e conferência de senha feitos pelo PostgreSQL (pgcrypto, bcrypt) — RNF02.
 const db = require('../config/db');
+const { termoLike } = require('../utils/validacao');
 
 const CAMPOS = `id_usuario, nome, login, perfil, ativo, TO_CHAR(criado_em, 'YYYY-MM-DD HH24:MI') AS criado_em`;
 
@@ -20,7 +21,7 @@ async function listar({ busca }) {
             (SELECT COUNT(*) FROM venda v WHERE v.id_usuario = u.id_usuario)::int AS qtd_vendas
        FROM usuario u
       WHERE ($1::text IS NULL OR u.nome ILIKE '%' || $1 || '%' OR u.login ILIKE '%' || $1 || '%')
-      ORDER BY u.ativo DESC, u.nome`, [busca || null]);
+      ORDER BY u.ativo DESC, u.nome`, [busca ? termoLike(busca) : null]);
   return rows;
 }
 

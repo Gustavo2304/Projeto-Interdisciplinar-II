@@ -1,5 +1,6 @@
 // SQL das vendas, itens e pagamentos.
 const db = require('../config/db');
+const { termoLike } = require('../utils/validacao');
 
 // Consulta de vendas com filtros (RF11): período, status, número, cliente e produto.
 async function listar(f) {
@@ -12,12 +13,12 @@ async function listar(f) {
   if (f.numero) cond.push(`v.id_venda = ${p(f.numero)}`);
   if (f.cliente) {
     const d = f.cliente.replace(/\D/g, '');
-    cond.push(`(c.nome ILIKE '%' || ${p(f.cliente)} || '%'${d ? ` OR c.cpf_cnpj LIKE ${p(d)} || '%'` : ''})`);
+    cond.push(`(c.nome ILIKE '%' || ${p(termoLike(f.cliente))} || '%'${d ? ` OR c.cpf_cnpj LIKE ${p(d)} || '%'` : ''})`);
   }
   if (f.produto) {
     cond.push(`EXISTS (SELECT 1 FROM item_venda i JOIN produto pr ON pr.id_produto = i.id_produto
                         WHERE i.id_venda = v.id_venda
-                          AND (pr.nome ILIKE '%' || ${p(f.produto)} || '%' OR pr.codigo = ${p(f.produto)}))`);
+                          AND (pr.nome ILIKE '%' || ${p(termoLike(f.produto))} || '%' OR pr.codigo = ${p(f.produto)}))`);
   }
   const where = cond.length ? `WHERE ${cond.join(' AND ')}` : '';
   const sql = `

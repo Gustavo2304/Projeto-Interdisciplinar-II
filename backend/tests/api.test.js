@@ -165,3 +165,24 @@ describe('Consultas, relatório e integração', () => {
     assert.ok(r.vendas[0].itens.length > 0 && r.vendas[0].pagamentos.length > 0);
   });
 });
+
+describe('Regressão dos defeitos corrigidos na Aula 7', () => {
+  test('D03: data inexistente (31/02) é recusada com 400, não com erro interno', async () => {
+    const r = await ger('GET', '/vendas?inicio=2026-02-31&fim=2026-03-01');
+    assert.equal(r.status, 400);
+    assert.equal(r.dados.erro, 'Data inicial inválida.');
+  });
+  test('D04: mensagens de identificador inválido com a concordância certa', async () => {
+    const venda = await atd('GET', '/vendas/abc');
+    assert.equal(venda.status, 400);
+    assert.equal(venda.dados.erro, 'Número de venda inválido.');
+    const produto = await adm('POST', '/produtos', { codigo: `REG${unico}`, nome: 'Teste', id_categoria: 'x', preco_custo: '1,00', preco_venda: '2,00', quantidade_estoque: 1, estoque_minimo: 0 });
+    assert.equal(produto.status, 400);
+    assert.equal(produto.dados.erro, 'Selecione uma categoria válida.');
+  });
+  test('D05: % e _ na busca são tratados como texto, não como curingas', async () => {
+    assert.equal((await adm('GET', '/clientes?busca=%25')).dados.length, 0);
+    assert.equal((await adm('GET', '/clientes?busca=_')).dados.length, 0);
+    assert.ok((await adm('GET', '/produtos?busca=arroz')).dados.length > 0);
+  });
+});

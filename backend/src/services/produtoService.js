@@ -9,7 +9,7 @@ function validar(d) {
   const p = {
     codigo: v.texto(d.codigo, 'Código', { max: 20 }),
     nome: v.texto(d.nome, 'Nome', { min: 2, max: 120 }),
-    id_categoria: v.id(d.id_categoria, 'Categoria'),
+    id_categoria: v.id(d.id_categoria, 'Selecione uma categoria válida.'),
     preco_custo: v.centavos(d.preco_custo ?? 0),
     preco_venda: v.centavos(d.preco_venda),
     quantidade_estoque: Number(d.quantidade_estoque ?? 0),
@@ -36,7 +36,7 @@ async function listar(q) {
 }
 
 async function buscar(id) {
-  const produto = await repo.buscarPorId(v.id(id));
+  const produto = await repo.buscarPorId(v.id(id, 'Produto inválido.'));
   if (!produto) throw new ErroApi(404, 'Produto não encontrado.');
   return produto;
 }
@@ -58,7 +58,7 @@ async function criar(dados) {
 }
 
 async function atualizar(id, dados) {
-  const n = v.id(id);
+  const n = v.id(id, 'Produto inválido.');
   const p = validar(dados);
   await transacao(async (cx) => {
     if (!(await repo.atualizar(n, p, cx))) throw new ErroApi(404, 'Produto não encontrado.');
@@ -69,7 +69,7 @@ async function atualizar(id, dados) {
 
 // Entrada de mercadoria: soma ao saldo e encerra o alerta se o produto voltou acima do mínimo.
 async function repor(id, dados) {
-  const n = v.id(id);
+  const n = v.id(id, 'Produto inválido.');
   const qtd = Number(dados.quantidade);
   if (!Number.isInteger(qtd) || qtd <= 0 || qtd > 100000) {
     throw new ErroApi(400, 'Informe uma quantidade inteira maior que zero.');
@@ -83,7 +83,7 @@ async function repor(id, dados) {
 
 // RN05: produto que já aparece em alguma venda nunca é apagado, apenas inativado.
 async function excluir(id) {
-  const n = v.id(id);
+  const n = v.id(id, 'Produto inválido.');
   if (!(await repo.buscarPorId(n))) throw new ErroApi(404, 'Produto não encontrado.');
   if (await repo.possuiVendas(n)) {
     await transacao(async (cx) => {
