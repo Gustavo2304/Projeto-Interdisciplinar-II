@@ -39,7 +39,8 @@
             <div id="resultadosCliente" class="resultados" style="position:static" hidden></div>
             <div id="clienteEscolhido" class="cliente-escolhido" hidden></div>
           </div>
-          <div class="bloco"><label>Desconto (R$)<input id="desconto" inputmode="decimal" placeholder="0,00"></label></div>
+          <div class="bloco"><label>Desconto (R$)<input id="desconto" inputmode="decimal" placeholder="0,00"></label>
+            <small id="erroDesconto" class="erro-campo" hidden>Desconto inválido: use um valor entre 0 e o subtotal (ex.: 2,50).</small></div>
           <div class="linha"><span>Subtotal</span><span id="subtotal">R$ 0,00</span></div>
           <div class="linha"><span>Desconto</span><span id="valorDesconto">R$ 0,00</span></div>
           <div class="linha total"><span>Total</span><span id="total">R$ 0,00</span></div>

@@ -10,16 +10,19 @@
   let formas = [];
   let encontrados = [];
   let foco = -1;
+  let pagando = false;            // D01: na etapa de pagamento o carrinho fica travado
 
   formas = await App.api('/formas-pagamento');
   $('#forma').innerHTML = formas.map((f) => `<option value="${f.id_forma_pagamento}">${App.escapar(f.nome)}</option>`).join('');
 
   // ---------- totais (em centavos, para não errar arredondamento) ----------
   const subtotal = () => [...carrinho.values()].reduce((s, i) => s + i.quantidade * App.centavos(i.produto.preco_venda), 0);
-  const desconto = () => {
+  // D02: desconto inválido não é mais ignorado em silêncio
+  const descontoDigitado = () => {
     const d = $('#desconto').value.trim() ? App.centavos($('#desconto').value) : 0;
-    return Number.isFinite(d) && d > 0 ? d : 0;
+    return Number.isFinite(d) && d >= 0 && d <= subtotal() ? d : null;
   };
+  const desconto = () => descontoDigitado() || 0;
   const total = () => Math.max(subtotal() - desconto(), 0);
   const pago = () => pagamentos.reduce((s, p) => s + p.valor, 0);
 
@@ -28,19 +31,22 @@
       <tr>
         <td><strong>${App.escapar(p.nome)}</strong><br><small class="rodape">${App.escapar(p.codigo)} · estoque ${p.quantidade_estoque}</small></td>
         <td><span class="qtd-ctrl">
-          <button type="button" data-menos="${p.id_produto}" aria-label="Diminuir">−</button>
+          <button type="button" data-menos="${p.id_produto}" aria-label="Diminuir" ${pagando ? 'disabled' : ''}>−</button>
           <span>${q}</span>
-          <button type="button" data-mais="${p.id_produto}" aria-label="Aumentar">+</button></span></td>
+          <button type="button" data-mais="${p.id_produto}" aria-label="Aumentar" ${pagando ? 'disabled' : ''}>+</button></span></td>
         <td class="num esconde-celular">${App.moeda(p.preco_venda)}</td>
         <td class="num">${App.moeda((q * App.centavos(p.preco_venda)) / 100)}</td>
-        <td class="acoes"><button class="btn mini contorno-perigo" data-remover="${p.id_produto}" aria-label="Remover">✕</button></td>
+        <td class="acoes"><button class="btn mini contorno-perigo" data-remover="${p.id_produto}" aria-label="Remover" ${pagando ? 'disabled' : ''}>✕</button></td>
       </tr>`).join('');
     $('#itens').innerHTML = linhas;
     $('#vazio').hidden = carrinho.size > 0;
     $('#subtotal').textContent = App.moeda(subtotal() / 100);
     $('#valorDesconto').textContent = '− ' + App.moeda(desconto() / 100);
     $('#total').textContent = App.moeda(total() / 100);
-    $('#btnPagar').disabled = carrinho.size === 0;
+    const invalido = descontoDigitado() === null;
+    $('#desconto').classList.toggle('invalido', invalido);
+    $('#erroDesconto').hidden = !invalido;
+    $('#btnPagar').disabled = carrinho.size === 0 || invalido;
   }
 
   function adicionar(produto, qtd) {
@@ -110,7 +116,7 @@
 
   $('#itens').addEventListener('click', (ev) => {
     const t = ev.target.closest('button');
-    if (!t) return;
+    if (!t || pagando) return;
     const id = Number(t.dataset.mais || t.dataset.menos || t.dataset.remover);
     const item = carrinho.get(id);
     if (!item) return;
@@ -120,12 +126,7 @@
     desenharCarrinho();
   });
 
-  $('#desconto').addEventListener('input', () => {
-    desenharCarrinho();
-    const d = $('#desconto').value.trim() ? App.centavos($('#desconto').value) : 0;
-    if (!Number.isFinite(d) || d < 0) App.aviso('Desconto inválido.', 'erro');
-    else if (d > subtotal()) App.aviso('O desconto não pode ser maior que o subtotal.', 'erro');
-  });
+  $('#desconto').addEventListener('input', desenharCarrinho);
 
   // ---------- cliente (opcional) ----------
   let esperaCli;
@@ -180,7 +181,10 @@
   }
 
   $('#btnPagar').addEventListener('click', () => {
-    if (desconto() > subtotal()) return App.aviso('O desconto não pode ser maior que o subtotal.', 'erro');
+    if (descontoDigitado() === null) return;
+    pagando = true;
+    $('#desconto').disabled = true;
+    desenharCarrinho();
     $('#passoResumo').hidden = true;
     $('#passoPagamento').hidden = false;
     $('#etapa').textContent = '2. Pagamento';
@@ -190,6 +194,9 @@
     $('#forma').focus();
   });
   $('#btnVoltar').addEventListener('click', () => {
+    pagando = false;
+    $('#desconto').disabled = false;
+    desenharCarrinho();
     $('#passoResumo').hidden = false;
     $('#passoPagamento').hidden = true;
     $('#etapa').textContent = '1. Itens';

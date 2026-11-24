@@ -3,7 +3,7 @@ const form = document.getElementById('formLogin');
 const erro = document.getElementById('erro');
 
 if (new URLSearchParams(location.search).get('expirou')) {
-  erro.textContent = 'Sua sessão terminou. Entre novamente.';
+  erro.textContent = 'Entre com seu usuário e senha para continuar.';
   erro.hidden = false;
 }
 

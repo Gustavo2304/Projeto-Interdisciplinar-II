@@ -204,3 +204,9 @@ body.login { min-height: 100vh; display: flex; align-items: center; justify-cont
 /* ajustes finos */
 .filtros label.check { flex: 0 0 auto; min-width: 0; align-self: center; padding-bottom: 8px; }
 td.nw { white-space: nowrap; }
+
+/* Aula 7: campo inválido (D02) e botões travados durante o pagamento (D01) */
+input.invalido { border-color: #c0392b; box-shadow: 0 0 0 3px rgba(192, 57, 43, .15); }
+.erro-campo { display: block; color: #b03a2e; font-size: .82rem; margin-top: 4px; }
+.erro-campo[hidden] { display: none; }
+.qtd-ctrl button:disabled, .acoes .btn:disabled { opacity: .35; cursor: not-allowed; }
